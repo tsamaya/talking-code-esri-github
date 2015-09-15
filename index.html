@@ -18,7 +18,9 @@
        /* Move content down because we have a fixed navbar that is 50px */
 
        body {
+
          padding-top: 50px;
+         padding-bottom: 50px;
        }
        /* Set the min and max height of the map, otherwise will expand to full screen */
 
@@ -27,50 +29,68 @@
          /*min-height: 100px;
        max-height: 1500px;*/
        }
-       /* Search widget styling to fit navbar */
 
-       #searchDiv {
-         padding-right: 15px;
+       .githublnk {
+         position: absolute;
+         bottom: 0;
+         color: #f3f3f3;
+         text-align: center;
+         width: 100%
        }
 
-       .esriSearch .esriContainer .esriInput {
-         width: 150px;
+       /* CUSTOMIZE THE NAVBAR
+       -------------------------------------------------- */
+       /* Special class on .container surrounding .navbar, used for positioning it into place. */
+       .navbar-wrapper {
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         z-index: 29;
        }
+       .navbar-container {
+         z-index: 100;
+         color: #f3f3f3;
+       }
+       .navbar-inverse .navbar-brand {
+         color: #fff;
+       }
+       /* RESPONSIVE CSS
+       -------------------------------------------------- */
 
-       .tooltip-inner {
-         white-space: nowrap;
+       @media (min-width: 768px) {
+         .navbar-container {
+            padding-right: 35px;
+            padding-left: 35px;
+          }
+          /* Navbar positioning foo */
+          .navbar-wrapper {
+            margin-top: 20px;
+            margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+          }
+          /* The navbar becomes detached from the top, so we round the corners */
+          .navbar-wrapper .navbar {
+            border-radius: 4px;
+          }
        }
-       /* Search widget styling for smaller screens */
 
        @media (max-width: 767px) {
-         #searchDiv {
+         .esriSimpleSliderTL {
+           top: 65px;
+         }
+         .navbar-container {
+           margin-right: 0;
+           margin-left: 0;
            padding-right: 0;
+           padding-left: 0;
          }
-         #searchInput.esriInput {
-           width: calc(100%);
-         }
-         .esriSearch .esriExpandContainer {
-           width: calc(100% - 47px);
-         }
-         .esriSearch .esriInputContainer {
-           width: 100%;
-         }
-         .esriSearch .esriContainer .esriInput {
-           width: calc(100% - 30px) !important;
-         }
-         .esriSearch .esriMenu {
-           position: inherit !important;
-         }
-       }
-
-       @media (max-width: 850px) {
-         .esriSearch .esriContainer .esriInput {
-           width: 125px;
+         h3 {
+           font-size: 15px;
          }
        }
      </style>
    </head>
-   <body>
+   <body  class="dark">
     <div class="navbar-wrapper">
       <div class="container navbar-container">
         <div class="navbar navbar-inverse navbar-static-top">
@@ -79,7 +99,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 </a>
-                <a class="navbar-brand" href="index.html" contenteditable="false">talking Code esri github Resources</a>
+                <a class="navbar-brand" href="index.html" contenteditable="false">esri github Resources</a>
             </div>
 
             <div class="navbar-collapse collapse">
@@ -95,7 +115,7 @@
                         <a href="" class="dropdown-toggle" data-toggle="dropdown">Bootstrap <b class="caret"></b></a>
                         <ul class="dropdown-menu" id="myDropdown">
                           <li><a target="_blank" href="http://www.getbootstrap.com">GetBootstrap</a></li>
-                          <li><a target="_blank" href="http://www.github.com/Esri/bootstrap-map-js">Bootstrap-map-js</a></li>
+                          <li><a target="_blank" href="https://github.com/Esri/bootstrap-map-js">Bootstrap-map-js</a></li>
                         </ul>
                     </li>
                     <li class="dropdown" id="">
@@ -129,7 +149,7 @@
 <!--beta 4.0 -->
 <div id="viewDiv"></div>
 
-  <div class="hero">
+  <div class="githublnk">
     <hgroup>
         <h3><a href="http://github.com/tsamaya/talking-code-esri-github">github.com/tsamaya/talking-code-esri-github</a></h3>
     </hgroup>
@@ -138,18 +158,18 @@
   <script src="https://js.arcgis.com/4.0beta1/"></script>
 
   <script type="text/javascript">
-    var map, view;
-    require([
-    "esri/Map",
-    "esri/views/SceneView",
-    "dojo/domReady!"
-    ],
-    function(Map, SceneView) {
+  var map, view;
+  require([
+    'esri/Map',
+    'esri/views/SceneView',
+    'dojo/domReady!'
+  ],
+  function(Map, SceneView) {
     map = new Map({
-      basemap: "topo"
+      basemap: 'topo'
     });
     view = new SceneView({
-      container: "viewDiv",
+      container: 'viewDiv',
       map: map,
       scale: 50000000,
       center: [-101.17, 21,78]
