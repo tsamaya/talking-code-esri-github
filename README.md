@@ -5,4 +5,4 @@ Venez découvrir le social coding github et en particulier les ressources mises 
 - Le 7 octobre de 16h30 – 17h30
 - Le 8 octobre de 11h00 – 12h00
 
-[Voir les ressources en ligne](//tsamaya.github.io/talking_code_esri_github)
+[Voir les ressources en ligne](//tsamaya.github.io/talking-code-esri-github)
