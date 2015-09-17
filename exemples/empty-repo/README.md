@@ -31,7 +31,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean rhoncus, est qui
 * [ArcGIS for JavaScript API Resource Center](http://help.arcgis.com/en/webapi/javascript/arcgis/index.html)
 * [ArcGIS Blog](http://blogs.esri.com/esri/arcgis/)
 * [twitter@arferrand](http://twitter.com/arferrand)
-* [twitter@arferrand](http://twitter.com/arferrand)
+* [twitter@fgrataloup](https://twitter.com/FGrataloup)
 
 ## Problèmes
 
