@@ -270,7 +270,7 @@
       function updateRequestTypeChart(counts) {
         // create reuest type chart data;
         var data = {
-          labels: ['Véhicule abandonné','Animal errant','Infraction de la route','Innondation','Graffiti','Sans-abris','Illegal Dumping','Parking Violation','Plant/Tree Complaint','Pothole Obstruction','Roadway Danger','Sidewalk Danger','Streetlight Broken','Street Sign Missing/Damaged','Trash Removal','Water Leak','Yard Waste Removal'],
+          labels: ['Véhicule abandonné','Animal errant','Infraction de la route','Innondation','Graffiti','Sans-abris','Décharge illégale','Stationnement interdit','Plante/arbre dangereux','Nide de poule','Danger sur chaussée','Danger sur trottoire','Feu tricolor défaillant','Panneau signalétique manquant,abimé','Immondice','Fuite d\'eau','Déchets végéteaux'],
           datasets: [
             {
               label: 'Request Types',
@@ -295,6 +295,6 @@
         requestTypeChart = new Chart(ctx).Bar(data, options);
       }
     });
-  </script>
-</body>
+    </script>
+  </body>
 </html>

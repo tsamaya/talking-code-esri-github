@@ -1,8 +1,10 @@
 /*global module:false*/
 var LIVERELOAD_PORT = 35729;
-var lrSnippet = require('connect-livereload')({port: LIVERELOAD_PORT});
-var mountFolder = function (connect, dir) {
-    return connect['static'](require('path').resolve(dir));
+var lrSnippet = require('connect-livereload')({
+  port: LIVERELOAD_PORT
+});
+var mountFolder = function(connect, dir) {
+  return connect['static'](require('path').resolve(dir));
 };
 module.exports = function(grunt) {
 
@@ -18,12 +20,12 @@ module.exports = function(grunt) {
 
     connect: {
       options: {
-        port:9000
+        port: 9000
       },
       // load unbuilt code w/ livereload
       unbuilt: {
         options: {
-          middleware: function (connect) {
+          middleware: function(connect) {
             return [
               lrSnippet,
               mountFolder(connect, './src/')
@@ -61,11 +63,11 @@ module.exports = function(grunt) {
         files: ['./src/js/**/*.js'],
         tasks: ['jshint']
       },
-      livereload:{
+      livereload: {
         options: {
-          livereload:LIVERELOAD_PORT
+          livereload: LIVERELOAD_PORT
         },
-        files:[
+        files: [
           './src/js/**/*.js',
           './src/**/*.html',
           './src/css/**/*.css'
@@ -86,7 +88,7 @@ module.exports = function(grunt) {
     // clean the output directory before each build
     clean: {
       build: ['dist'],
-      deploy: ['dist/**/*.consoleStripped.js','dist/**/*.uncompressed.js','dist/**/*.js.map'],
+      deploy: ['dist/**/*.consoleStripped.js', 'dist/**/*.uncompressed.js', 'dist/**/*.js.map'],
       bower: ['src/bootstrap-map-js', 'src/dijit', 'src/dojo', 'src/dojo-bootstrap', 'src/dojox', 'src/put-selector', 'src/util', 'src/xstyle'],
       slurp: ['src/esri']
     },
@@ -156,7 +158,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('default', ['serve']);
 
-  grunt.registerTask('serve', function (target) {
+  grunt.registerTask('serve', function(target) {
     var trgt = target || 'unbuilt';
     grunt.task.run([
       'jshint',

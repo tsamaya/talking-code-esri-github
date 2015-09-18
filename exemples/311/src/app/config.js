@@ -4,7 +4,7 @@ define([], function() {
     citizenRequestLayerUrl: 'http://services.arcgis.com/S3Ai1AW0LHe63cdi/ArcGIS/rest/services/Request/FeatureServer/0',
     // infoTemplate for reporting.
     infoTemplate: {
-              title: '<b>Request ${objectid}</b>',
+              title: '<b>Rapport ${objectid}</b>',
               content: '<span class="infoTemplateContentRowLabel">Date: </span>' +
                   '<span class="infoTemplateContentRowItem">${requestdate:DateFormat}</span><br><span class="infoTemplateContentRowLabel">Téléphone: </span>' +
                   '<span class="infoTemplateContentRowItem">${phone:formatPhoneNumber}</span><br><span class="infoTemplateContentRowLabel">Nom: </span>' +
@@ -29,17 +29,17 @@ define([], function() {
               '3': 'Innondation',
               '4': 'Graffiti',
               '5': 'Sans-abris',
-              '6': 'Illegal Dumping',
-              '7': 'Parking Violation',
-              '8': 'Plant/Tree Complaint',
-              '9': 'Pothole Obstruction',
-              '10': 'Roadway Danger',
-              '11': 'Sidewalk Danger',
-              '12': 'Streetlight Broken',
-              '13': 'Street Sign Missing/Damaged',
-              '14': 'Trash Removal',
+              '6': 'Décharge illégale',
+              '7': 'Stationnement interdit',
+              '8': 'Plante/Arbre dangereux',
+              '9': 'Nide de poule',
+              '10': 'Danger sur chaussée',
+              '11': 'Danger sur trottoire',
+              '12': 'Feu tricolor défaillant',
+              '13': 'Panneau signalétique manquant,abimé',
+              '14': 'Immondice',
               '15': 'Fuite d\'eau',
-              '16': 'Yard Waste Removal'
+              '16': 'Déchets végéteaux'
             },
   //Map Options
     mapOptions:
