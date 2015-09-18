@@ -34,9 +34,9 @@ define([], function() {
               '8': 'Plante/Arbre dangereux',
               '9': 'Nide de poule',
               '10': 'Danger sur chaussée',
-              '11': 'Danger sur trottoire',
+              '11': 'Danger sur trottoir',
               '12': 'Feu tricolor défaillant',
-              '13': 'Panneau signalétique manquant,abimé',
+              '13': 'Panneau signalétique',
               '14': 'Immondice',
               '15': 'Fuite d\'eau',
               '16': 'Déchets végéteaux'

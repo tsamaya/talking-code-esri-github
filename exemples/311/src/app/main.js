@@ -29,8 +29,8 @@ define([
   app.collapseMenuToggleButton = dom.byId('collapseToggleButton');
   app.startEditAlert = dom.byId('startEditAlert');
   app.sidebar = dom.byId('sidebar');
-  app.attributesModal = query('#attributesModal');
-  app.requestTypeSelect = query('#attributesModal [name="requesttype"]')[0];
+  app.attributesModal = query('#requestModal');
+  app.requestTypeSelect = query('#requestModal [name="requesttype"]')[0];
   // TODO: get these from the feature layer on load
   app.severityFieldDomainCodedValuesDict = config.severityFieldDomainCodedValuesDict;
   app.requestTypeFieldDomainCodedValuesDict = config.requestTypeFieldDomainCodedValuesDict;
@@ -105,7 +105,7 @@ define([
     }
     graphic = new Graphic(app.currentGeometry);
     attributes.severity = parseInt(app.currentSeverity, 10);
-    query('#attributesModal input, #attributesModal select, #attributesModal textarea').forEach(function (formInput) {
+    query('#requestModal input, #requestModal select, #requestModal textarea').forEach(function (formInput) {
       attributes[formInput.name] = formInput.value;
     });
     attributes.requesttype = parseInt(attributes.requesttype, 10);
@@ -158,11 +158,11 @@ define([
     });
 
     // submit or cancel request and hide modal
-    query('#attributesModal .btn').on('click', function(e) {
-      var target = e.target;
-      if (target.innerText === 'Valider') {
+    query('#requestModal .btn').on('click', function(e) {
+      // var target = e.target;
+      // if (target.innerText === 'Valider') {
         submitIncidentReport();
-      }
+      // }
       app.attributesModal.modal('hide');
     });
 
