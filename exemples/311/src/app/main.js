@@ -159,10 +159,10 @@ define([
 
     // submit or cancel request and hide modal
     query('#requestModal .btn').on('click', function(e) {
-      // var target = e.target;
-      // if (target.innerText === 'Valider') {
+      var target = e.target;
+      if (target.innerHTML === 'Valider' ) {
         submitIncidentReport();
-      // }
+      }
       app.attributesModal.modal('hide');
     });
 
