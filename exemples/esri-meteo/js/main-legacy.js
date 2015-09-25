@@ -27,7 +27,7 @@ function init() {
   var infoTemplate = new esri.InfoTemplate();
   infoTemplate.setTitle('Météo');
   infoTemplate.setContent(getWindowContent);
-  var s = 'http://services.arcgis.com/S3Ai1AW0LHe63cdi/arcgis/rest/services/villes_50k/FeatureServer/0';
+  var s = 'http://services.arcgis.com/S3Ai1AW0LHe63cdi/arcgis/rest/services/villes100k/FeatureServer/0';
   featureLayer = new esri.layers.FeatureLayer(s, {
     mode: esri.layers.FeatureLayer.MODE_SNAPSHOT,
     outFields: ["POI_NAME"],
