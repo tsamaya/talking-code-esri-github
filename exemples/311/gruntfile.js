@@ -141,7 +141,24 @@ module.exports = function(grunt) {
         options: {
           base: 'dist'
         },
-        src: ['index.html', 'dashboard.html', 'app/css/**', 'dojo/dojo.js', 'dojo/resources/**', 'esri/images/**', 'esri/dijit/images/**', 'esri/dijit/font/**']
+        src: [
+        // files for collector site
+        'index.html',
+        'app/css/**',
+        'dojo/dojo.js',
+        'dojo/resources/**',
+        'esri/images/**',
+        'esri/dijit/images/**',
+        'esri/dijit/font/**',
+        'dojo/cldr/nls/**',
+        'dojo/nls/**',
+        'esri/nls/**',
+        // NOTE: may need to add add'l nls folders as used
+        // files for (unbuilt) dashboard site
+        'dashboard.html',
+        'app/**/*.js'
+        // NOTE: app/css/** is already included above
+        ]
       }
     }
   });

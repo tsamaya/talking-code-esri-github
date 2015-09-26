@@ -32,7 +32,7 @@ define([], function() {
               '6': 'Décharge illégale',
               '7': 'Stationnement interdit',
               '8': 'Plante/Arbre dangereux',
-              '9': 'Nide de poule',
+              '9': 'Nid de poule',
               '10': 'Danger sur chaussée',
               '11': 'Danger sur trottoir',
               '12': 'Feu tricolor défaillant',
