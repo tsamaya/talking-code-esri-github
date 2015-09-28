@@ -1,5 +1,5 @@
 {
-  "name": "responsive-citizens",
+  "name": "sig2015-incidents",
   "version": "0.0.1",
   "description": "A responsive take on the Attribute editing - mobile sample from Esri's ArcGIS API for JavaScript",
   "main": "gruntfile.js",
