@@ -89,7 +89,7 @@ module.exports = function(grunt) {
     clean: {
       build: ['dist'],
       deploy: ['dist/**/*.consoleStripped.js', 'dist/**/*.uncompressed.js', 'dist/**/*.js.map'],
-      bower: ['src/bootstrap-map-js', 'src/dijit', 'src/dojo', 'src/dojo-bootstrap', 'src/dojox', 'src/put-selector', 'src/util', 'src/xstyle'],
+      bower: ['src/bootstrap-map-js', 'src/dijit', 'src/dgrid', 'src/dojo', 'src/dojo-bootstrap', 'src/dojox', 'src/put-selector', 'src/util', 'src/xstyle'],
       slurp: ['src/esri']
     },
     // dojo build configuration, mainly taken from dojo boilerplate

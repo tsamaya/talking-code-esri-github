@@ -2,9 +2,9 @@
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean rhoncus, est quis vestibulum vestibulum, orci nunc ullamcorper sem, sit amet pretium lacus ligula eget erat. Sed turpis nibh, elementum vitae quam a, semper venenatis metus. In lacus massa, dignissim pretium iaculis at, vestibulum sit amet turpis. Vivamus in dictum odio. Maecenas malesuada, lectus dapibus aliquet ornare, erat risus euismod leo, quis viverra massa mi non eros. Fusce interdum mollis lectus id accumsan. Suspendisse gravida, nisi accumsan interdum bibendum, nunc nunc sagittis ante, sed mattis odio orci at enim. Sed luctus justo id diam imperdiet, non aliquam ex tincidunt.
 
-[View live here](http://tsamaya.github.io/TITREREPO/index.html)
+[View live here](http://fgrataloup.github.io/TITREREPO/index.html)
 
-![App](https://raw.github.com/tsamaya/TITREREPO/master/screenshot.png)
+![App](https://raw.github.com/fgrataloup/TITREREPO/master/screenshot.png)
 
 ## Fonctionnallités
 * ArcGIS Javascript  API
